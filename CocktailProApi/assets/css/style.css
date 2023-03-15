@@ -1,0 +1,250 @@
+/*------------GENERAL------------*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+@media screen and (min-width: 601px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 22px;
+  }
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.fixed-footer-body{
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+/*----------NAVBAR---------*/
+
+.navbar {
+    background: none;
+    border-color: transparent;
+    letter-spacing: 0.1em;
+}
+
+.navbar .navbar-collapse {
+    text-align: right;
+    border-top: 0.1em solid transparent;
+    overflow-x: hidden;
+}
+
+.nav-link {
+  border-radius: 30px;
+}
+
+.nav-link:hover {
+   background: linear-gradient(to right, rgba(211, 115, 25, 0.767) 0%, rgba(218, 98, 18, 0.219) 1%, rgba(235, 18, 18, 0.4) 84%, rgba(219, 3, 3, 0.589) 100%);
+   border-radius: 30px;
+}
+
+.navbar-brand {
+  border-radius: 30px;
+}
+
+.navbar-brand:hover {
+  background: linear-gradient(to right, rgba(211, 115, 25, 0.767) 0%, rgba(218, 98, 18, 0.219) 1%, rgba(235, 18, 18, 0.4) 84%, rgba(219, 3, 3, 0.589) 100%);
+  border-radius: 30px;
+}
+
+
+/*------------LANDING------------*/
+.background-landing {
+    background-attachment: fixed;
+    background-image: url('https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Brandy-Old-Fashioned-Sweet_EXPS_TOHcom22_37101_P2_MD_01_05_11b_v2.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh
+}
+
+.fixed-footer-body {
+  background-image: 
+  url('https://media.timeout.com/images/105486198/image.jpg'), 
+  url('https://wwd.com/wp-content/uploads/2018/06/polynesiancocktail.jpeg');
+  background-size: cover, cover;
+  background-repeat: no-repeat, repeat;
+}
+
+.background-landing .btn {
+  border-radius: 2em;
+  font-size: 14px;
+}
+
+body {
+ font-family: 'Roboto', sans-serif;
+ font-weight: 400;
+ font-size: 13px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+ font-family: 'Abril Fatface', serif;
+}
+
+@media only screen and (max-width: 767px) {
+  #about-residence {
+    /* smaller landing page for mobile device */
+    background-image: url(../images/background-25-small-device.png);
+  }
+}
+
+/*------------SEARCH------------*/
+
+.wrap {
+    margin-top: 20em;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 0.1em solid;
+  padding: 1em;
+  border-right: none;
+  outline: none;
+  color: #9DBFAF;
+  font-size: 1.6em;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  border: 0.1em solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 0.3em 0.3em 0;
+  cursor: pointer;
+  font-size: 1.4em;
+}
+
+.fa-search {
+  width: 30px;
+}
+
+.hidden {
+    display: none;
+}
+/*------------CATALOGUE------------*/
+
+.btn-toolbar{
+  text-align: center;
+}
+
+.btn-group .btn {
+    width: 2em;
+    margin-left: 0.5em;
+    font-size: 1.3em;
+    border: none;
+}
+
+#onEntry, #btnZ {
+  border-radius: 12px;
+}
+
+#btnB, #btnC, #btnD, #btnE, #btnF, #btnG, #btnH, #btnI, #btnJ, #btnK, #btnL, #btnM, #btnN, #btnO, #btnP, #btnQ, #btnR, #btnS, #btnT, #btnU, #btnV, #btnW, #btnX, #btnY {
+  border-radius: 10px;
+}
+
+/*----------MODAL----------*/
+
+.modal-content {
+  background: linear-gradient(to right, rgb(223, 133, 50) 0%, rgb(226, 119, 48) 1%, rgb(250, 85, 85) 84%, rgba(255, 73, 73, 0.945) 100%);
+  border: none;
+}
+
+.modal-header {
+  border-color: black;
+}
+
+#hiddenX {
+  color: black;
+}
+
+.modal-title {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 23px;
+  font-weight: 800;
+  border: none;
+}
+
+#modal-cocktail {
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+}
+
+.modal-footer {
+  border-color: black;
+}
+
+/*------------SEARCH&CATALOGUE------------*/
+.image{
+    text-align: center;
+    font-size: 15px;
+}
+
+#results img {
+  border: 0.1em solid #ddd; /* Gray border */
+  border-radius: 0.2em;  /* Rounded border */
+  padding: 0.3em; /* Some padding */
+  width: 14em; /* Set a small width */
+  height: 16em;
+
+}
+
+#results img:hover {
+  box-shadow: 0 0 0.1em 0.1em rgba(0, 140, 186, 0.5);
+}
+
+.card-title {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#results .card {
+    height: 24em;
+    width: 20em;
+    margin: 1em;
+}
+
+.close {
+  color: rgb(0, 0, 0);
+  float: right;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+
+/*------------FOOTER------------*/
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+}
